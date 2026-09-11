@@ -1,0 +1,21 @@
+# Virtual environment
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Attendance records
+attendance.csv
+
+# Personal/training data
+images/
+data/images.p
+data/labels.p
+
+# Jupyter notebooks
+notebooks/
+.ipynb_checkpoints/
+
+# VS Code
+.vscode/
