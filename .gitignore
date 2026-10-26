@@ -1,21 +1,31 @@
-# Virtual environment
+# Python environments, caches and build output
 .venv/
-
-# Python cache
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
+build/
+dist/
+*.egg-info/
 
-# Attendance records
-attendance.csv
-
-# Personal/training data
+# Local biometric data, records, exports and trained model files
+data/
 images/
-data/images.p
-data/labels.p
+*.sqlite*
+*.db
+*.csv
+models/*.h5
+models/labels.json
+.env
+.env.*
+*.log
 
-# Jupyter notebooks
-notebooks/
+# Editor and notebook state
+.vscode/
 .ipynb_checkpoints/
 
-# VS Code
-.vscode/
+# Local legacy archive
+archive/
+
+# Operating system metadata
+Thumbs.db
+.DS_Store

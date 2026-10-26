@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>CampusFlow · Mewar University</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="logo">C</div>
+        <div><b>CampusFlow</b><small>MEWAR UNIVERSITY</small></div>
+      </div>
+      <div class="nav-label">WORKSPACE</div>
+      <button class="nav active" data-page="overview"><i>◫</i> Overview</button
+      ><button class="nav" data-page="register">
+        <i>＋</i> Register person</button
+      ><button class="nav" data-page="attendance"><i>◎</i> Attendance</button
+      ><button class="nav" data-page="exit"><i>↗</i> Exit scan</button
+      ><button class="nav" data-page="records">
+        <i>▤</i> Records & reports</button
+      ><button class="nav" data-page="manage"><i>♙</i> Manage people</button>
+      <div class="side-bottom">
+        <span class="live-dot"></span><span id="status">System ready</span>
+        <div class="campus">
+          🏛️ &nbsp; Mewar University<br /><small>Chittorgarh, Rajasthan</small>
+        </div>
+      </div>
+    </aside>
+    <main>
+      <header>
+        <div>
+          <div class="crumb">Campus / <b id="crumb">Overview</b></div>
+          <h1 id="title">Good day 👋</h1>
+          <p class="sub" id="subtitle">Your campus attendance at a glance.</p>
+        </div>
+        <div class="header-right">
+          <span class="date-pill" id="today"></span>
+          <div class="avatar">MU</div>
+        </div>
+      </header>
+      <section id="page"></section>
+    </main>
+    <div id="toast" class="toast"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
